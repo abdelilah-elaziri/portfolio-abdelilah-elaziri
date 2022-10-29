@@ -27,17 +27,17 @@ const Sidebar = () => (
         <ul>
             <li>
                 <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/abdelilah-elaziri-9b89a213a/">
-                    <FontAwesomeIcon icon={faLinkedin}  color="#4d4d4e"/>
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
                 </a>
             </li>
             <li>
                 <a target="_blank" rel='noreferrer' href="https://github.com/abdelilah-elaziri/">
-                    <FontAwesomeIcon icon={faGithub}  color="#4d4d4e"/>
+                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                 </a>
             </li>
             <li>
                 <a target="_blank" rel='noreferrer' href="skype:live:abdelilahelaziri">
-                    <FontAwesomeIcon icon={faSkype}  color="#4d4d4e"/>
+                    <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
                 </a>
             </li>
         </ul>
