@@ -1,0 +1,125 @@
+.nav-bar {
+    background: #181818;
+    width: 70px;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 3;
+    min-height: 500px;
+
+    .logo {
+        display: block;
+        padding: 8px 0;
+
+
+        img {
+            width: 50px;
+            display: block;
+            margin: 8px auto;
+            height: auto;
+
+
+            &.sub-logo {
+                width: 50px;
+            }
+        }
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        height: 50%;
+        text-align: center;
+        top: 50%;
+        margin-top: -120px;
+        width: 100%;
+
+
+        a {
+            display: block;
+            font-size: 25px;
+            height: 51px;
+            line-height: 51px;
+            color: #4d4d4e;
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+
+            i {
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover {
+                color: #ffd700;
+
+                svg {
+                    opacity: 0;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            &::after {
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                display: block;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &:first-child {
+                &::after {
+                    content: "Home";
+                }
+            }
+        }
+
+        a.aboutme-link {
+            &:after {
+                content: "About Me";
+            }
+        }
+
+        a.contact-link {
+            &:after {
+                content: "Contact";
+            }
+        }
+
+        a.active {
+            svg {
+                color: #ffd700;
+            }
+        }
+    }
+
+    ul {
+        position: absolute;
+        bottom: 20px;
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: block;
+
+        li{
+            a{
+                display: block;
+                font-size: 15px;
+                padding: 7px 0;
+                line-height: 16px;
+
+                &:hover svg{
+                    color: #ffd700;
+                }
+            }
+        }
+    }
+}
